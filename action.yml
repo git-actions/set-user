@@ -1,0 +1,12 @@
+name: Set Git User
+description: Set git user as `github-actions[bot]`
+runs:
+  using: composite
+  steps:
+    - run: |
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config user.name "github-actions[bot]"
+      shell: bash
+branding:
+  icon: user
+  color: gray-dark
